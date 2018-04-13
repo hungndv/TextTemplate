@@ -79,7 +79,7 @@ namespace TextTemplate.Models
             string firstCharToUpper = firstChar.ToString().ToUpper();
             string propertyName = firstCharToUpper + fieldName.Substring(fieldPrefix.Length + 1);
 
-            if (pageName == "LoginPage" && propertyName == "UserName") Write("        [Required(ErrorMessage = \"UserName is required.\")]");
+            if (pageName == "LoginPage" && propertyName == "UserName") Write("        [Required(ErrorMessage = \"UserName is required.\")]\r\n");
 #>
         public string <#=propertyName#> { get; set; }
 <#

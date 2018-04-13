@@ -11,5 +11,7 @@ namespace TextTemplate
         private string _elementUserName;
 
         private string _elementPassword;
+
+        private string _elementIsRememberMe;
     }
 }

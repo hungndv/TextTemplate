@@ -46,19 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientPage.Fields.cs" />
-    <Compile Include="ClientPage.Properties.cs" />
-    <Compile Include="LoginPage.Properties.cs" />
+    <Compile Include="ClientPage.cs" />
+    <Compile Include="ClientPage.Fields.cs">
+      <DependentUpon>ClientPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPage.Properties.cs">
+      <DependentUpon>ClientPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs" />
-    <Compile Include="LoginPage.Fields.cs" />
+    <Compile Include="LoginPage.Fields.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.Properties.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\ClientPageModel.cs" />
-    <Compile Include="Models\LoginPage2Model.cs" />
     <Compile Include="Models\LoginPageModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -67,15 +75,14 @@
       <LastGenOutput>TextTemplate.txt</LastGenOutput>
     </Content>
     <Content Include="TextTemplate.txt">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>TextTemplate.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
