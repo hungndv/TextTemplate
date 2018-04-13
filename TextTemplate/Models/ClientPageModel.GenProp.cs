@@ -13,6 +13,6 @@ namespace TextTemplate.Models
 {
     public partial class ClientPageModel
     {
-
+        public string ClientName { get; set; }
     }
 }

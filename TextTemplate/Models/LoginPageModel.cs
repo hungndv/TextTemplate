@@ -11,11 +11,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TextTemplate.Models
 {
-    public class LoginPageModel
+    public partial class LoginPageModel
     {
-        [Required(ErrorMessage = "UserName is required.")]
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string IsRememberMe { get; set; }
     }
 }

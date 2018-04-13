@@ -50,18 +50,24 @@
     <Compile Include="ClientPage.Fields.cs">
       <DependentUpon>ClientPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientPage.Properties.cs">
+    <Compile Include="ClientPage.GenProp.cs">
       <DependentUpon>ClientPage.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs" />
     <Compile Include="LoginPage.Fields.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.Properties.cs">
+    <Compile Include="LoginPage.GenProp.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\ClientPageModel.cs" />
+    <Compile Include="Models\ClientPageModel.GenProp.cs">
+      <DependentUpon>ClientPageModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\LoginPageModel.cs" />
+    <Compile Include="Models\LoginPageModel.GenProp.cs">
+      <DependentUpon>LoginPageModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
